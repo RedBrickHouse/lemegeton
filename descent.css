@@ -1,0 +1,149 @@
+@font-face{
+ font-family:DescentUI;src:url("assets/descent/ui.woff2?v=share6") format("woff2");
+ font-style:normal;font-weight:100 900;font-display:swap;
+}
+@font-face{
+ font-family:DescentTitle;src:url("assets/descent/titles.woff2") format("woff2");
+ font-style:normal;font-weight:700;font-display:swap;
+}
+@font-face{
+ font-family:DescentTitleSC;src:url("assets/descent/titles-zh.woff2") format("woff2");
+ font-style:normal;font-weight:400 800;font-display:swap;
+}
+:root{
+ --gold:#c49e67;--pale:#eddfc5;--accent:#e26b54;--muted:#c6bcb0;
+ --bg:#121011;--text:#f2e8d7;--line:#594638;
+ --sans:DescentUI,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans CJK KR",Arial,sans-serif;
+ --serif:Georgia,DescentTitle,"Batang",serif;
+ font-family:var(--sans);color:var(--text);background:var(--bg);
+}
+:root:lang(zh){--serif:Georgia,DescentTitleSC,"SimSun",serif}
+body{background:#100f10}
+.topbar{background:linear-gradient(#1c1919f7,#151213fa);border-bottom-color:#756044;box-shadow:0 3px 16px #05030480}
+.nav-logo{width:clamp(115px,9.5vw,146px)}
+.nav-logo img{filter:none}.main-nav{gap:clamp(15px,2vw,35px)}
+.main-nav a{color:#dbd0bf;font-weight:550;font-size:13px}
+.main-nav a::after{height:1px;background:var(--gold)}.store-link{color:#f0d3a6}
+.hero{color:var(--pale);display:grid;align-items:center;text-align:start;min-height:clamp(490px,70svh,736px);background:#17090b}
+.hero-art{z-index:-5}.hero-art img{object-position:65% 0}
+.hero-motion{position:absolute;inset:0 0 0 auto;width:76%;height:100%;object-fit:cover;object-position:center;z-index:-4;opacity:0;transition:opacity .35s ease;mask-image:linear-gradient(90deg,transparent,#000 23%)}
+.hero:is([data-moving],[data-paused-frame]) .hero-motion{opacity:1}
+.hero::after{background:linear-gradient(90deg,#0d0c0df5 0%,#130e0ed9 23%,#190d0e83 45%,transparent 70%),linear-gradient(0deg,#110e0ff5 0%,#130d1045 19%,transparent 51%),linear-gradient(180deg,#110b0c33,transparent 17%)}
+.hero::before{content:"";position:absolute;z-index:0;bottom:12px;left:0;right:0;height:1px;opacity:.6;background:linear-gradient(90deg,transparent,#8f5e39 12%,#a48051 50%,#8f5e39 85%,transparent)}
+.hero-inner{display:flex;position:relative;align-items:center;z-index:1}
+.hero-lockup{width:min(53%,620px);margin:0;text-align:left;padding:clamp(48px,7svh,92px) 0 clamp(62px,9svh,117px)}
+.genre-line,.release,.hero-actions,.motion-toggle{display:flex;align-items:center}
+.genre-line{font:580 clamp(11px,.95vw,14px)/1.5 var(--sans);letter-spacing:.07em;gap:11px;color:#d3b483}
+.metal-diamond{display:inline-block;position:relative;z-index:0;flex-shrink:0;width:8px;height:8px;transform:rotate(45deg);border:1px solid #d6ab69;box-shadow:inset 0 0 0 1px #2a1c15}
+.metal-diamond::after{content:"";position:absolute;inset:2px;background:#cc8d49}
+.hero-lockup h1{width:100%;max-width:585px;margin:16px 0 8px}
+.hero-lockup h1 img{filter:drop-shadow(1px 4px 7px #160602ab)}
+.game-line{font:700 clamp(20px,1.8vw,31px)/1.5 var(--serif);letter-spacing:-.045em;color:#f6e5ca;text-shadow:0 2px 12px #100506;margin:0}
+.hero-actions{justify-content:flex-start;gap:12px;margin:clamp(20px,3.2vh,33px) 0 11px}
+.hero-actions a{min-height:49px;border-radius:1px;font:650 14px/1.45 var(--sans);padding:12px 22px}
+.primary-cta{background:linear-gradient(180deg,#a33526,#77251e);border:1px solid #bc8665;box-shadow:inset 0 0 0 2px #4d201e,inset 0 0 0 3px #dc92603b,0 4px 12px #100507aa}
+.primary-cta:hover{background:linear-gradient(#bc4531,#8b3024)}
+.trailer-cta{color:#efdbb9;background:linear-gradient(#2e2723d9,#161313e3);border-color:#9d8160;box-shadow:inset 0 0 0 2px #1a1816}
+.trailer-cta:hover{background:#352a23;border-color:#f1c98f}
+.release{font:500 12px var(--sans);color:#c8b8a6;justify-content:start;gap:10px}
+.release i{width:12px;height:1px;border-radius:0;background:#997449}
+.motion-toggle{position:absolute;bottom:26px;right:clamp(22px,5vw,112px);z-index:2;gap:8px;min-height:36px;padding:5px 13px;background:#110d0baf;color:#ead9bf;border:1px solid #8e725572;font:500 12px var(--sans)}
+.motion-toggle i{display:block;width:7px;height:9px;border-left:7px solid currentColor;border-block:4px solid transparent}
+.motion-toggle[aria-pressed=true] i{border:solid currentColor;border-width:0 2px}
+.motion-toggle:hover{border-color:var(--gold)}
+.gate-links{position:relative;isolation:isolate;background:linear-gradient(180deg,#2b2422aa,#211c1ac9),url("assets/descent/cinder.webp") center/260px;border-block:1px solid #70513c;box-shadow:inset 0 2px 0 #120e0f,inset 0 -2px 0 #100f0f}
+.gate-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.gate-row a{display:flex;align-items:center;gap:clamp(10px,1.55vw,24px);color:#e7d7b9;text-decoration:none;min-height:clamp(74px,6.6vw,99px);padding:8px clamp(10px,2.7vw,45px);border-inline-start:1px solid #81644846}
+.gate-row a:last-child{border-inline-end:1px solid #81644846}
+.gate-row a:hover,.gate-row a:focus-visible{background:#84573b24;color:#fff1cd}
+.gate-row img{object-fit:contain;height:clamp(38px,3.8vw,62px);width:clamp(38px,3.8vw,62px)}
+.gate-row span{font:700 clamp(16px,1.35vw,22px)/1.35 var(--serif);letter-spacing:-.035em}
+.gate-row i{margin-left:auto;font:16px/1 Georgia,serif;color:#bc9561}
+.story{background:radial-gradient(ellipse at 23% 50%,#3723236b,transparent 63%),linear-gradient(#111012b3,#131112db),url("assets/descent/cinder.webp") center/340px;border-bottom-color:#61493580}
+.story-inner{max-width:1150px;grid-template-columns:.95fr 1.05fr;gap:clamp(35px,6.6vw,108px);padding-block:clamp(45px,6.3vw,106px)}
+.story-art{aspect-ratio:1.65;isolation:isolate;border:1px solid #96784e78;padding:5px;background:#171313;overflow:visible}
+.story-art img{object-fit:cover;object-position:50% 17%;height:100%;width:100%}
+.story-art::before,.story-art::after{content:"";position:absolute;width:24px;height:24px;pointer-events:none;background:none;box-shadow:none}
+.story-art::before{inset:-3px auto auto -3px;border-top:2px solid #b08855;border-left:2px solid #b08855}
+.story-art::after{inset:auto -3px -3px auto;border-bottom:2px solid #b08855;border-right:2px solid #b08855}
+.story-copy{max-width:510px}
+.section-label{color:#c3a276;font-size:12px;letter-spacing:.045em}.section-label::before{background:#b79062;width:28px;height:1px}
+.story-copy h2,.game-heading,.game-specs h2{font:700 clamp(33px,3.35vw,58px)/1.18 var(--serif);color:#eee1c9;letter-spacing:-.055em}
+.story-copy h2{margin:11px 0 18px}
+.story-copy>p:not(.section-label){color:#d1c5b7;font-size:clamp(15px,1.13vw,18px);line-height:1.82}
+.story-next{display:inline-flex;align-items:center;min-height:40px;gap:15px;text-decoration:none;border-bottom:1px solid #8c6948;font:600 13px var(--sans);color:#d9b588;margin-top:13px}
+.story-next i{font:16px Georgia,serif}.story-next:hover{color:#fff1ce}
+.game-combat{background:linear-gradient(115deg,#28242688 0%,#19181ac9 62%,#231b1ce0),url("assets/descent/cinder.webp") center/300px;border-block-end:1px solid #544131;padding-block:clamp(50px,6.3vw,94px)}
+.game-combat .combat-media video{background:#121011;border:1px solid #a17e586b;outline:1px solid #43372c;outline-offset:4px}
+.combat-tabs{border-color:#9b7a494f}.combat-tabs button[aria-pressed=true]{color:#ead2a7}
+.combat-tabs button[aria-pressed=true]:after{height:2px;background:var(--gold)}
+.game-combat:has([data-form=demon][aria-pressed=true]) .combat-tabs button[aria-pressed=true]:after{background:#bf5446}
+.game-realm{background:radial-gradient(ellipse at 70% 40%,#3036345e,transparent 70%),linear-gradient(#181b1bcc,#111415e8),url("assets/descent/cinder.webp") center/310px;border-block:1px solid #695b437a}
+.game-realm .realm-gallery{display:flex;flex-direction:column;gap:12px}
+.game-realm .realm-feature{width:min(100%,960px);margin:0 auto}
+.game-realm .realm-heading{max-width:960px;margin-inline:auto}
+#scene-image{border:1px solid #9b87616e;outline:1px solid #493e32;outline-offset:3px}
+.game-realm .scene-list{width:min(100%,960px);margin:0 auto;aspect-ratio:auto;grid-template-rows:none;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}
+.game-realm .scene-list button{aspect-ratio:1.85;border-color:#8b775e6b}
+.game-realm .scene-list button[aria-pressed=true]{border-color:var(--gold)}
+.game-bulletin{background:linear-gradient(125deg,#241f1dd9,#171414eb),url("assets/descent/cinder.webp") center/275px}
+.news-stories a{border-color:#69583f7d}.news-stories time{color:#bba887}.body-link{color:#dbbe97}
+.game-footer{border-top:1px solid #59483a;background:#111012}
+#art-dialog,#trailer-dialog{background:#181516;color:#f0e2c9;border:1px solid #866c4e}
+#art-dialog{width:min(1100px,94vw);max-height:94svh;padding:0;overflow:auto}
+#art-dialog::backdrop,#trailer-dialog::backdrop{background:#090809e8}
+#art-image{width:100%;object-fit:contain;max-height:calc(91svh - 86px);background:#100f10}
+.dialog-top h2{font:700 16px var(--sans)}
+@media(max-width:980px){
+ .main-nav{gap:16px}.nav-wrap{gap:13px}.nav-logo{width:113px}
+ .hero-lockup{width:57%}
+ .gate-row a{padding-inline:14px}
+ .game-realm .scene-list button span{font-size:12px}
+}
+@media(min-width:701px) and (max-width:1050px){
+ .hero{min-height:clamp(420px,54vw,550px)}.hero-lockup{padding:46px 0 70px}.hero-lockup h1{width:100%}
+}
+@media(max-width:760px){
+ .main-nav{display:flex;flex-wrap:wrap;gap:0}
+ .main-nav a{justify-content:center;min-width:31%;padding-inline:6px}
+ .story-inner{padding-block:38px;gap:24px}
+ .gate-row a{padding:9px;gap:7px}.gate-row i{display:none}
+}
+@media(max-width:700px){
+ .hero{align-items:end;min-height:0;text-align:center}
+ .hero-art img{object-position:50% 0}
+ .hero-motion{inset:0 0 auto;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;mask-image:linear-gradient(#000 91%,transparent)}
+ .hero:is([data-moving],[data-paused-frame]) .hero-art{opacity:.18}
+ .hero:is([data-moving],[data-paused-frame])::after{background:linear-gradient(to top,#110e0f 0%,#110e0f55 28%,transparent 52%)}
+ .hero::after{background:linear-gradient(0deg,#110e0ffc 0%,#100d0ff0 14%,#150d0ed9 35%,#180c0f59 63%,transparent 83%)}
+ .hero::before{bottom:6px}
+ .hero-inner{justify-content:center}.hero-lockup{width:100%;margin:0;text-align:center;padding:calc(56.25vw + 10px) 0 24px}
+ .genre-line,.hero-actions,.release{justify-content:center}
+ .genre-line{font-size:10px;gap:8px}.metal-diamond{width:6px;height:6px}
+ .hero-lockup h1{width:min(94%,375px);max-width:100%;margin:9px auto 6px}
+ .game-line{margin-inline:0;font-size:clamp(17px,4.3vw,24px);letter-spacing:-.045em}
+ .hero-actions{gap:8px;margin:14px 0 10px}.hero-actions a{min-height:43px;font-size:13px;padding:9px 14px}
+ .release{font-size:11px}.motion-toggle{top:12px;bottom:auto;right:12px;font-size:10px;padding:4px 8px;min-height:34px}
+ .gate-row{width:100%}.gate-row a{flex-direction:column;justify-content:center;min-height:71px;gap:3px;text-align:center;padding:6px 2px}.gate-row img{width:28px;height:28px}.gate-row span{font-size:clamp(12px,3.15vw,17px)}
+ .story-art{aspect-ratio:2.1}.story-art img{object-position:center 17%}.story-inner{flex-direction:column-reverse}
+ .story-copy h2{font-size:36px;margin:7px 0 12px}.story-next{margin-top:7px}
+ .game-realm .scene-list{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:none;gap:6px}
+}
+@media(max-width:360px){
+ .hero-actions a{padding-inline:10px}.game-line{font-size:16px}.gate-row span{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){.hero-motion{transition:none}}
+
+.steam-finale{position:relative;isolation:isolate;overflow:hidden;background:#140e0e;border-top:1px solid #785337}
+.departure,.steam-finale::after{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.departure{object-fit:cover;object-position:center 72%;z-index:-2}
+.steam-finale::after{content:"";z-index:-1;background:linear-gradient(90deg,#100e10e8 8%,#160d108f 30%,transparent 52%,#160d1077 71%,#110b0ce0 94%)}
+.finale-content{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:clamp(38px,5.3vw,85px);min-height:200px}
+.finale-id>img{width:clamp(150px,22vw,330px);height:auto}
+.finale-id .release{margin-top:6px;justify-content:flex-start}
+.steam-finale .primary-cta{display:inline-flex;align-items:center;gap:16px;min-height:45px;padding:10px 18px;text-decoration:none;color:#fff6e8;font:650 14px var(--sans)}
+@media(max-width:700px){
+ .finale-content{flex-direction:column;align-items:flex-start;gap:14px;min-height:0;padding-block:28px}
+ .departure{object-position:65% 65%}.steam-finale::after{background:linear-gradient(90deg,#100c0ed9, #100c0e44 60%,transparent)}
+ .steam-finale .primary-cta{font-size:12px;min-height:41px;padding:8px 13px}
+}

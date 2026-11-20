@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#101113">
+<meta name="description" content="레메게톤 공식 홈페이지. 악마의 이름을 몸에 새긴 로건이 흑역으로 향한다. 공식 티저와 플레이 영상, 개발 소식을 확인하세요.">
+<meta property="og:title" content="레메게톤 | Lemegeton">
+<meta property="og:description" content="레메게톤 공식 홈페이지. 검을 든 로건이 악마로 변신해 싸우는 다크 판타지 액션 로그라이트.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://redbrickhouse.gg/lemegeton/">
+<meta property="og:image" content="https://redbrickhouse.gg/lemegeton/assets/social.jpg">
+<meta property="og:image:width" content="920">
+<meta property="og:image:height" content="430">
+<meta property="og:image:alt" content="레메게톤 공식 게임 이미지">
+<meta name="twitter:card" content="summary_large_image">
+<title>레메게톤 | Lemegeton</title>
+<link rel="icon" href="assets/folio/seal.webp">
+<link rel="preload" as="image" href="assets/descent/cover.webp" media="(min-width: 701px)">
+<link rel="preload" as="image" href="assets/descent/cover-mobile.webp" media="(max-width: 700px)">
+<link rel="stylesheet" href="style.css?v=descent4">
+<link rel="stylesheet" href="body.css?v=share6">
+<link rel="stylesheet" href="depth.css?v=share6">
+<link rel="stylesheet" href="build.css?v=share6">
+<link rel="stylesheet" href="descent.css?v=share6">
+<script src="depth.js?v=share6" defer></script>
+<script src="build.js?v=share6" defer></script>
+<script src="body.js?v=share6" defer></script>
+<script src="app.js?v=share6" defer></script>
+</head>
+<body>
+<a href="#main" class="skip" data-t="skip">본문 바로가기</a>
+<header class="topbar" id="top">
+ <div class="nav-wrap container">
+  <a class="nav-logo" href="#home" aria-label="레메게톤 홈" data-aria-t="home"><img src="assets/folio/wordmark.webp" alt="Lemegeton" width="1280" height="233"></a>
+  <nav class="main-nav" id="main-nav" aria-label="주 메뉴" data-aria-t="nav"><a href="#story" data-t="navStory">세계관</a><a href="#fight" data-t="navCombat">전투</a><a href="#pact" data-t="navPact">계약</a><a href="#build" data-t="navBuild">성장</a><a href="#realm" data-t="navMedia">흑역 탐험</a><a href="#bulletin" data-t="navNews">소식</a></nav>
+  <div class="utilities">
+   <label class="locale"><span class="visually-hidden" data-t="language">표시 언어</span><select id="language"><option value="ko">한국어</option><option value="en">English</option><option value="zh">简体中文</option></select></label>
+   <a class="store-link" href="https://store.steampowered.com/app/3728770/Lemegeton/?l=koreana" target="_blank" rel="noopener">Steam <span aria-hidden="true">↗</span></a>
+   <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="main-nav" aria-label="메뉴" data-aria-t="menu" hidden><span></span><span></span><span></span></button>
+  </div>
+ </div>
+</header>
+<main id="main" tabindex="-1">
+ <section class="hero" id="home" aria-labelledby="title">
+  <picture class="hero-art"><source media="(max-width: 700px)" srcset="assets/descent/cover-mobile.webp"><img src="assets/descent/cover.webp" width="1280" height="680" alt="" fetchpriority="high"></picture>
+  <video class="hero-motion" id="hero-teaser" muted playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+  <div class="hero-inner container">
+   <div class="hero-lockup">
+    <p class="genre-line"><span class="metal-diamond" aria-hidden="true"></span><span data-t="heroGenre">다크 판타지 액션 로그라이트</span></p>
+    <h1 id="title"><span class="visually-hidden" data-t="heroTitle">레메게톤</span><img src="assets/folio/wordmark.webp" alt="" width="1280" height="233"></h1>
+    <p class="game-line" data-t="heroLine">로건은 몸에 악마의 이름을 새겼다.</p>
+    <div class="hero-actions">
+     <a class="primary-cta" href="https://store.steampowered.com/app/3728770/Lemegeton/?l=koreana" target="_blank" rel="noopener"><span data-t="wish">Steam에서 찜하기</span><span aria-hidden="true">↗</span></a>
+     <a class="trailer-cta" href="assets/teaser.mp4" data-trailer><i aria-hidden="true"></i><span data-t="watch">소리 켜고 보기</span></a>
+    </div>
+    <p class="release"><span lang="en">Windows PC</span><i aria-hidden="true"></i><span data-t="soon">출시 예정</span></p>
+   </div>
+  </div>
+  <button class="motion-toggle" id="motion-toggle" type="button" aria-controls="hero-teaser" aria-pressed="false" hidden><i aria-hidden="true"></i><span data-t="motionStart">티저 재생</span></button>
+ </section>
+ <nav class="gate-links" aria-label="게임 둘러보기" data-aria-t="discover">
+  <div class="container gate-row">
+   <a href="#encounters"><img src="assets/descent/sigil-skull.webp" alt="" width="55" height="55"><span data-t="jumpBoss">악마와 보스</span><i aria-hidden="true">↓</i></a>
+   <a href="#pact"><img src="assets/descent/sigil-palm.webp" alt="" width="55" height="55"><span data-t="jumpPact">악마상인의 계약</span><i aria-hidden="true">↓</i></a>
+   <a href="#build"><img src="assets/descent/sigil-fracture.webp" alt="" width="55" height="55"><span data-t="jumpBuild">카드와 낙인</span><i aria-hidden="true">↓</i></a>
+  </div>
+ </nav>
+ <section class="story" id="story" aria-labelledby="story-title">
+  <div class="story-inner container">
+   <div class="story-art"><img src="assets/official/hero-wide.webp" alt="불타는 문 옆에 선 은빛 머리의 인물" data-alt-t="storyAlt" width="2560" height="992" loading="lazy"></div>
+   <div class="story-copy">
+    <p class="section-label" data-t="navStory">세계관</p>
+    <h2 id="story-title" data-t="storyTitle">검은 세례</h2>
+    <p data-t="storyOne">검은 세례가 내리고 사람들이 악마로 변했다. 마지막까지 악마를 막아 낸 곳은 노바르의 성벽이었다.</p>
+    <p data-t="storyTwo">인간의 칼로는 악마를 벨 수 없었다. 로건은 악마의 힘을 얻기 위해 몸에 낙인을 새기고 홀로 성벽 밖으로 나섰다.</p>
+    <a class="story-next" href="#fight"><span data-t="storyNext">로건의 전투 보기</span><i aria-hidden="true">↓</i></a>
+   </div>
+  </div>
+ </section>
+<section id="fight" class="game-combat game-section" aria-labelledby="combat-title">
+  <div class="container">
+    <div class="combat-layout">
+      <div class="combat-heading">
+        <h2 id="combat-title" class="game-heading" data-t="combatTitle">로건의 전투</h2>
+        <p class="section-copy" data-t="combatIntro">낙인이 차면 검으로 계속 싸울지, 악마로 변신할지 선택할 수 있다.</p>
+      </div>
+      <div class="combat-description">
+        <div class="combat-tabs" role="group" aria-label="전투 방식" hidden>
+          <button type="button" data-form="human" aria-controls="combat-player combat-summary" aria-pressed="true"><span data-t="combatHuman">인간의 검술</span></button>
+          <button type="button" data-form="demon" aria-controls="combat-player combat-summary" aria-pressed="false"><span data-t="combatDemon">악마의 힘</span></button>
+        </div>
+        <p id="combat-summary" aria-live="polite">적의 공격이 닿는 순간 검을 들어 받아친다. 상대의 자세가 무너지면 파고들어 마지막 일격을 가한다.</p>
+      </div>
+      <figure class="combat-media">
+        <video id="combat-player" width="1120" height="630" controls playsinline muted preload="none" poster="assets/human.webp" aria-label="로건이 검으로 적의 공격을 받아치는 장면"><source src="assets/human.mp4" type="video/mp4"></video>
+        <figcaption><span class="footage-caption" data-t="combatFootage">실제 플레이 영상</span></figcaption>
+      </figure>
+    </div>
+
+  </div>
+</section>
+<section id="encounters" class="encounter-section" aria-labelledby="encounters-title">
+  <div class="container">
+    <div class="encounter-intro">
+      <h2 id="encounters-title" data-t="depthEnemyTitle">악마와 보스</h2>
+      <p data-t="depthEnemyLead">흑역에는 30종이 넘는 악마와 여섯 보스가 있다. 악마마다 공격 직전의 동작이 다르다. 그 동작을 읽으면 언제 받아쳐야 할지 보인다.</p>
+    </div>
+    <div class="encounter-scenes">
+      <figure class="encounter-major">
+        <a class="encounter-screen" href="assets/descent/encounter-wings.mp4" data-video data-video-title="depthBossName">
+          <img src="assets/descent/encounter-wings.webp" loading="lazy" width="1170" height="658" alt="">
+          <span class="encounter-play"><i aria-hidden="true"></i><span data-t="depthBossWatch">보스전 재생</span></span>
+        </a>
+        <figcaption><h3 data-t="depthBossName">날개 달린 보스, 가프</h3><p data-t="depthBossCaption">불길이 치솟는 좁은 길에서 가프가 로건을 몰아붙인다.</p></figcaption>
+      </figure>
+      <figure class="encounter-minor">
+        <a class="encounter-screen" href="assets/descent/encounter-sigils.mp4" data-video data-video-title="depthDemonName">
+          <img src="assets/descent/encounter-sigils.webp" loading="lazy" width="1170" height="658" alt="">
+          <span class="encounter-play"><i aria-hidden="true"></i><span data-t="depthDemonWatch">전투 장면 재생</span></span>
+        </a>
+        <figcaption><h3 data-t="depthDemonName">악마와의 근접전</h3><p data-t="depthDemonCaption">붉은빛이 바닥을 가르는 순간, 로건이 바짝 붙어 반격한다.</p></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<section id="pact" class="pact-section" aria-labelledby="pact-title">
+  <div class="container pact-layout">
+    <div class="pact-copy">
+      <h2 id="pact-title" data-t="depthPactTitle">악마상인의 계약</h2>
+      <p data-t="depthPactLead">악마상인에게 힘을 빌리려면 계약을 맺어야 한다. 그 힘을 쓸수록 타락이 깊어져 결국 저주를 받는다.</p>
+      <div class="pact-offer">
+        <img src="assets/folio/seal.webp" width="153" height="153" loading="lazy" alt="">
+        <div><h3 lang="en">Blood Contract</h3><p data-t="depthDeal">최대 체력 20을 내주고 공격력 20을 얻는다.</p></div>
+      </div>
+      <a class="pact-switch" id="pact-switch" href="assets/contract.webp"><span data-t="depthOfferOpen">계약 조건 보기</span><i aria-hidden="true">→</i></a>
+    </div>
+    <figure class="pact-scene">
+      <div class="pact-frame">
+        <img id="pact-image" src="assets/merchant.webp" width="1560" height="878" loading="lazy" data-alt-t="depthMerchantAlt" alt="횃불이 켜진 돌기둥 옆에서 로건이 악마상인과 마주 선다.">
+      </div>
+      <figcaption id="pact-caption" aria-live="polite">악마상인과의 만남</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="descent-build" id="build" aria-labelledby="growth-heading">
+  <div class="container growth-inner">
+    <div class="growth-head">
+      <h2 id="growth-heading" data-t="growthHeading">카드와 낙인</h2>
+      <p data-t="growthIntro">반격에 강한 검사를 키울 수도, 악마를 불러내 대신 싸우게 할 수도 있다. 고른 카드와 스킬에 따라 싸우는 방식이 달라진다.</p>
+    </div>
+    <img class="growth-portraits" src="assets/descent/build-portraits.webp" width="1146" height="286" alt="카드에 그려진 일곱 악마" data-alt-t="growthArt" loading="lazy">
+    <div class="growth-topics">
+      <details name="lemegeton-growth" open>
+        <summary><h3 data-t="growthCards">카드와 세트 효과</h3><span class="growth-count" data-t="growthCardsCount">카드 100장 이상 · 세트 효과 40종</span><i aria-hidden="true"></i></summary>
+        <div class="growth-detail">
+          <div><p data-t="growthCardsText">카드마다 다른 효과가 있다. 특정 카드를 함께 모으면 세트 효과도 발동한다.</p>
+          <p class="growth-note" data-t="growthCardsExample">갈림길에서는 받아친 직후의 공격을 강화할지, 가드에 성공할 때마다 스태미나를 회복할지 고른다.</p></div>
+          <a class="growth-compare" href="assets/descent/build-choice.webp" data-image data-image-title="growthChoiceScreen">
+            <img src="assets/descent/build-choice-detail.webp" width="514" height="414" loading="lazy" alt="">
+            <strong data-t="growthChoiceScreen">갈림길 선택 화면</strong>
+          </a>
+        </div>
+      </details>
+      <details name="lemegeton-growth">
+        <summary><h3 data-t="growthSkills">악마의 스킬</h3><span class="growth-count" data-t="growthSkillsCount">스킬 36종</span><i aria-hidden="true"></i></summary>
+        <div class="growth-detail">
+          <div><p data-t="growthSkillsText">제단의 시련을 통과하면 악마의 이름을 딴 스킬을 얻는다.</p>
+          <p class="growth-note" data-t="growthSkillsExample">‘악마의 길’에는 받아치기에 성공하면 3초 동안 공격력이 15 오르는 스킬도 있다.</p></div>
+          <a class="growth-compare" href="assets/descent/build-skill.webp" data-image data-image-title="growthSkillScreen">
+            <img src="assets/descent/build-skill-detail.webp" width="500" height="462" loading="lazy" alt="">
+            <strong data-t="growthSkillScreen">악마의 길 선택 화면</strong>
+          </a>
+        </div>
+      </details>
+      <details name="lemegeton-growth">
+        <summary><h3 data-t="growthBrand">죽어도 남는 낙인</h3><span class="growth-count" data-t="growthBrandCount">낙인 노드 120개 이상</span><i aria-hidden="true"></i></summary>
+        <div class="growth-detail growth-last">
+          <div>
+            <p data-t="growthBrandText">흑역에서 쓰러지면 길을 처음부터 다시 찾아야 한다. 한 번 열어 둔 낙인 노드는 로건의 몸에 그대로 남는다.</p>
+            <p class="growth-note" data-t="growthBrandEffect">노드에 따라 능력치가 오르거나 스킬이 강해지고, 새로운 효과가 열리기도 한다. 그렇게 얻은 힘은 다음 탐험에서도 쓸 수 있다.</p>
+          </div>
+          <figure class="growth-brand-screen">
+            <img src="assets/descent/brand-recovery.webp" width="1090" height="655" alt="붉은 선으로 이어진 낙인 노드 중 ‘체력 회복’이 활성화된 모습" data-alt-t="growthBrandAlt" loading="lazy">
+            <figcaption data-t="growthBrandExample">전투 데모의 ‘체력 회복’ 노드. 적을 하나 처치할 때마다 최대 체력의 1%를 회복한다.</figcaption>
+          </figure>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="realm" class="game-realm game-section" aria-labelledby="realm-title">
+  <div class="container">
+    <div class="realm-heading">
+      <h2 id="realm-title" class="game-heading" data-t="realmTitle">흑역 탐험</h2>
+      <p class="section-copy" data-t="realmIntro">흑역은 들어설 때마다 길이 바뀐다. 회복샘을 찾아 숨을 돌리거나 제단의 시련에 도전할 수 있다.</p>
+    </div>
+    <div class="realm-gallery">
+      <figure class="realm-feature">
+        <img id="scene-image" src="assets/forest.webp" width="1620" height="906" alt="풀과 바위 사이로 난 흙길에서 적과 검을 맞대는 로건" loading="lazy">
+        <figcaption class="realm-caption" aria-live="polite"><strong id="scene-caption">숲길</strong><p id="scene-description">풀이 우거진 숲길에서 로건과 적이 검을 맞댄다.</p></figcaption>
+      </figure>
+      <div class="scene-list" role="group" aria-label="흑역 스크린샷" hidden>
+        <button type="button" data-scene="forest" aria-controls="scene-image scene-caption" aria-pressed="true"><img src="assets/forest.webp" width="1620" height="906" alt="" loading="lazy"><span data-t="realmForest">숲길</span></button>
+
+        <button type="button" data-scene="trap" aria-controls="scene-image scene-caption" aria-pressed="false"><img src="assets/descent/trap.webp" width="1120" height="630" alt="" loading="lazy"><span data-t="realmTrap">함정 발판</span></button>
+        <button type="button" data-scene="fissure" aria-controls="scene-image scene-caption" aria-pressed="false"><img src="assets/descent/fissure.webp" width="1620" height="906" alt="" loading="lazy"><span data-t="realmFissure">갈라진 전장</span></button>
+        <button type="button" data-scene="boss" aria-controls="scene-image scene-caption" aria-pressed="false"><img src="assets/boss.webp" width="1620" height="906" alt="" loading="lazy"><span data-t="realmBoss">보스전</span></button>
+        <button type="button" data-scene="merchant" aria-controls="scene-image scene-caption" aria-pressed="false"><img src="assets/merchant.webp" width="1560" height="878" alt="" loading="lazy"><span data-t="realmMerchant">악마상인</span></button>
+        <button type="button" data-scene="contract" aria-controls="scene-image scene-caption" aria-pressed="false"><img src="assets/contract.webp" width="1560" height="878" alt="" loading="lazy"><span data-t="realmContract">계약</span></button>
+      </div>
+      <noscript><p class="realm-fallback"><a href="assets/descent/trap.webp">함정 발판</a> · <a href="assets/descent/fissure.webp">갈라진 전장</a> · <a href="assets/boss.webp">보스전</a> · <a href="assets/merchant.webp">악마상인</a> · <a href="assets/contract.webp">계약</a></p></noscript>
+    </div>
+  </div>
+</section>
+<section id="bulletin" class="game-bulletin game-section" aria-labelledby="bulletin-title">
+  <div class="container bulletin-grid">
+    <div class="developer-news">
+      <div class="news-heading"><h2 id="bulletin-title" class="game-heading" data-t="newsTitle">개발 소식</h2><a class="body-link" href="https://store.steampowered.com/news/app/3728770/?l=koreana" target="_blank" rel="noopener"><span data-t="newsAll">전체 보기</span><i aria-hidden="true">↗</i></a></div>
+      <div class="news-stories">
+        <a href="https://store.steampowered.com/news/app/3728770/view/678515671123886195?l=koreana" target="_blank" rel="noopener">
+          <time datetime="2026-11-18">2026.11.18</time><div><h3 data-t="newsGstar">지스타 2026에서 레메게톤을 만나보세요</h3><p data-t="newsGstarDetail">11월 19~22일, 부산 벡스코 제2전시장 1층 레드브릭하우스 부스에서 레메게톤을 플레이할 수 있습니다.</p></div><i aria-hidden="true">↗</i>
+        </a>
+        <a href="https://store.steampowered.com/news/app/3728770/view/678515671123886191?l=koreana" target="_blank" rel="noopener">
+          <time datetime="2026-11-18">2026.11.18</time><div><h3 data-t="newsPartner">와일드플랜과 레드브릭하우스, 퍼블리싱 계약 체결</h3></div><i aria-hidden="true">↗</i>
+        </a>
+        <a href="https://store.steampowered.com/news/app/3728770/view/519722558531043407?l=koreana" target="_blank" rel="noopener">
+          <time datetime="2025-08-21">2025.08.21</time><div><h3 data-t="newsDev">개발 노트 1 · 일대다 전투</h3><p data-t="newsDevDetail">적이 한꺼번에 몰려들 때도 검을 휘두르는 손맛이 살아나도록 전투 밸런스와 연출을 다듬고 있습니다.</p></div><i aria-hidden="true">↗</i>
+        </a>
+      </div>
+    </div>
+    <div id="game-info" class="game-specs" aria-labelledby="game-info-title">
+      <h2 id="game-info-title" data-t="infoTitle">게임 정보</h2>
+      <dl><div><dt data-t="infoRelease">출시일</dt><dd data-t="infoSoon">출시 예정</dd></div><div><dt data-t="infoPlatform">플랫폼</dt><dd>Windows PC · Steam</dd></div><div><dt data-t="infoGenre">장르</dt><dd data-t="infoRogue">싱글플레이 액션 로그라이트</dd></div><div><dt data-t="infoControl">조작</dt><dd data-t="infoPad">컨트롤러 완벽 지원</dd></div></dl>
+      <a class="body-link" href="https://store.steampowered.com/app/3728770/Lemegeton/?l=koreana#sysreq_anchor" target="_blank" rel="noopener"><span data-t="infoSpecs">Steam에서 PC 사양 확인</span><i aria-hidden="true">↗</i></a>
+    </div>
+  </div>
+</section>
+<aside class="steam-finale" aria-label="Steam">
+ <img class="departure" src="assets/descent/threshold.webp" width="1280" height="720" alt="" loading="lazy">
+ <div class="container finale-content">
+  <div class="finale-id"><img src="assets/folio/wordmark.webp" width="1280" height="233" alt="Lemegeton" loading="lazy"><p class="release"><span lang="en">Windows PC</span><i aria-hidden="true"></i><span data-t="soon">출시 예정</span></p></div>
+  <a class="primary-cta" href="https://store.steampowered.com/app/3728770/Lemegeton/?l=koreana" target="_blank" rel="noopener"><span data-t="wish">Steam에서 찜하기</span><span aria-hidden="true">↗</span></a>
+ </div>
+</aside>
+
+</main>
+<footer id="credits" class="game-footer">
+  <div class="company-logos"><a href="https://redbrickhouse.gg/" target="_blank" rel="noopener"><img src="assets/rbh.svg" width="228" height="66" alt="RED BRICK HOUSE" loading="lazy"></a><i aria-hidden="true"></i><img src="assets/wildplan.webp" width="660" height="127" alt="WILDPLAN" loading="lazy"></div>
+  <small lang="en">Developed by WILDPLAN. Published by RED BRICK HOUSE.</small>
+</footer>
+
+<dialog id="art-dialog" aria-labelledby="art-title"><div class="dialog-top"><h2 id="art-title"></h2><button type="button" id="close-art" data-aria-t="close" aria-label="닫기">×</button></div><img id="art-image" alt=""></dialog>
+<dialog id="trailer-dialog" aria-labelledby="trailer-title">
+ <div class="dialog-top"><h2 id="trailer-title" data-t="trailerTitle">레메게톤 공식 티저</h2><button type="button" id="close-film" aria-label="닫기" data-aria-t="close">×</button></div>
+ <video id="trailer-player" width="1280" height="720" controls playsinline preload="none" poster="assets/folio/teaser-plate.webp"></video>
+ <a class="direct-video" href="assets/teaser.mp4" target="_blank" rel="noopener" data-t="openVideo">영상 파일 열기</a>
+</dialog>
+</body>
+</html>
