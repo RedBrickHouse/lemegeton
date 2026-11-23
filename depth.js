@@ -32,9 +32,9 @@
   const korean = {
     ...Object.fromEntries([...document.querySelectorAll("#encounters [data-t], #pact [data-t]")].map((element) => [element.dataset.t, element.textContent])),
     depthMerchantAlt: selected.alt,
-    depthContractAlt: "Blood Contract 선택 화면. 최대 체력이 100에서 80으로 줄고 공격력이 20 오른다.",
+    depthContractAlt: "Blood Contract를 골랐을 때의 능력치. 최대 체력이 100에서 80으로 줄고 공격력은 20 오른다.",
     depthMerchantName: legend.textContent,
-    depthContractName: "Blood Contract 조건",
+    depthContractName: "Blood Contract의 효과",
     depthOfferClose: "상인에게 돌아가기"
   };
   const languageCopy = {ko:korean, en:english, zh:chinese};

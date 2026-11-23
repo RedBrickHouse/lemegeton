@@ -35,7 +35,7 @@
       motionReplay:"Replay teaser",
       storyNext:"See Logan in combat",
       realmTrap:"Pressure plate",
-      realmFissure:"Fractured ground",
+      realmFissure:"Red sigils",
       newsDev:"Dev diary · Building one-against-many combat",
       newsDevDetail:"WILDPLAN on developing fights against multiple enemies."
     },
@@ -58,7 +58,7 @@
       motionReplay:"重播预告片",
       storyNext:"查看洛根的战斗",
       realmTrap:"机关踏板",
-      realmFissure:"开裂的战场",
+      realmFissure:"红色法阵",
       newsDev:"开发日志 · 打造以一敌多的战斗",
       newsDevDetail:"WILDPLAN 分享如何设计与多个敌人同时交战的体验。"
     }

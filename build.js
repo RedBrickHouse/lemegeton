@@ -2,8 +2,8 @@
 
 window.BUILD_COPY = {
   ko: {
-    growthChoiceScreen: "갈림길 선택 화면",
-    growthSkillScreen: "악마의 길 선택 화면"
+    growthChoiceScreen: "카드 선택 화면",
+    growthSkillScreen: "스킬 선택 화면"
   },
   en: {
     growthHeading: "Cards and the Brand",
