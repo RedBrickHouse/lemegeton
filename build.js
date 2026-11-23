@@ -20,8 +20,11 @@ window.BUILD_COPY = {
     growthSkillsExample: "The first path shown here raises attack power for three seconds after a successful parry.",
     growthSkillScreen: "Demon path choices",
     growthBrand: "What survives a run",
-    growthBrandCount: "120+ nodes in the full tree",
+    growthBrandCount: "More than 120 Brand nodes",
     growthBrandText: "If Logan falls in the Black Realm, he starts his next run with the stats and skills he’s already strengthened through the Brand.",
+    growthBrandPaths: "You can focus on offense or build up your defenses as well. Linked nodes affect one another, so check the neighboring nodes before you choose your next one.",
+    growthBrandDemo: "Explore the Brand in the STOVE demo",
+    growthBrandSteam: "About the game on Steam",
     growthBrandEffect: "In the combat demo, unlocking Health Recovery lets Logan regain 1% of his maximum health whenever he defeats an enemy.",
     growthBrandAlt: "Several paths of Brand nodes branch out from a red sigil in the lower left.",
     growthBrandExample: "One section of the Brand tree in the combat demo. Red lines connect the nodes Logan has unlocked."
@@ -43,6 +46,9 @@ window.BUILD_COPY = {
     growthBrand: "死亡也抹不去的烙印",
     growthBrandCount: "整棵烙印树共 120 多个节点",
     growthBrandText: "洛根倒在黑域后，下一次探索得从头开始。通过烙印提升的属性和强化过的技能都会保留。",
+    growthBrandPaths: "你可以专攻攻击，也可以兼顾防御。相连的烙印会彼此影响，解锁前不妨先看看旁边的节点。",
+    growthBrandDemo: "在 STOVE 试玩介绍中查看烙印",
+    growthBrandSteam: "在 Steam 查看游戏介绍",
     growthBrandEffect: "在战斗试玩版中，解锁「生命恢复」节点后，每击败一个敌人，洛根就能回复最大生命值的 1%。",
     growthBrandAlt: "从左下方的红色印记出发，烙印节点沿数条路线向外延伸。",
     growthBrandExample: "战斗试玩版中的一段烙印树。红线连接着洛根已解锁的节点。"

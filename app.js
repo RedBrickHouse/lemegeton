@@ -64,6 +64,11 @@
     }
   };
   const steam = {ko:"koreana",en:"english",zh:"schinese"};
+  const brandDemo = {
+    ko: ["ko", "낙인 성장"],
+    en: ["en", "Brand Growth"],
+    zh: ["zh-cn", "品牌增长"]
+  };
   const select = byId("language");
   function setLanguage(value) {
     const lang = Object.hasOwn(translations, value) ? value : "ko";
@@ -81,6 +86,8 @@
       const url = new URL(link.href);
       url.searchParams.set("l", steam[lang]);link.href = url.href;
     });
+    const [demoLocale, sectionTitle] = brandDemo[lang];
+    byId("brand-demo-source").href = `https://store.onstove.com/${demoLocale}/games/101722#:~:text=${encodeURIComponent(sectionTitle)}`;
     window.dispatchEvent(new CustomEvent("game-language",{detail:lang}));
   }
 
