@@ -1,5 +1,5 @@
 @font-face{
- font-family:DescentUI;src:url("assets/descent/ui.woff2?v=copy7") format("woff2");
+ font-family:DescentUI;src:url("assets/descent/ui.woff2?v=breaks8") format("woff2");
  font-style:normal;font-weight:100 900;font-display:swap;
 }
 @font-face{
@@ -32,7 +32,7 @@ body{background:#100f10}
 .hero::before{content:"";position:absolute;z-index:0;bottom:12px;left:0;right:0;height:1px;opacity:.6;background:linear-gradient(90deg,transparent,#8f5e39 12%,#a48051 50%,#8f5e39 85%,transparent)}
 .hero-inner{display:flex;position:relative;align-items:center;z-index:1}
 .hero-lockup{width:min(53%,620px);margin:0;text-align:left;padding:clamp(48px,7svh,92px) 0 clamp(62px,9svh,117px)}
-.genre-line,.release,.hero-actions,.motion-toggle{display:flex;align-items:center}
+.genre-line,.hero-actions,.motion-toggle{display:flex;align-items:center}
 .genre-line{font:580 clamp(11px,.95vw,14px)/1.5 var(--sans);letter-spacing:.07em;gap:11px;color:#d3b483}
 .metal-diamond{display:inline-block;position:relative;z-index:0;flex-shrink:0;width:8px;height:8px;transform:rotate(45deg);border:1px solid #d6ab69;box-shadow:inset 0 0 0 1px #2a1c15}
 .metal-diamond::after{content:"";position:absolute;inset:2px;background:#cc8d49}
@@ -45,8 +45,6 @@ body{background:#100f10}
 .primary-cta:hover{background:linear-gradient(#bc4531,#8b3024)}
 .trailer-cta{color:#efdbb9;background:linear-gradient(#2e2723d9,#161313e3);border-color:#9d8160;box-shadow:inset 0 0 0 2px #1a1816}
 .trailer-cta:hover{background:#352a23;border-color:#f1c98f}
-.release{font:500 12px var(--sans);color:#c8b8a6;justify-content:start;gap:10px}
-.release i{width:12px;height:1px;border-radius:0;background:#997449}
 .motion-toggle{position:absolute;bottom:26px;right:clamp(22px,5vw,112px);z-index:2;gap:8px;min-height:36px;padding:5px 13px;background:#110d0baf;color:#ead9bf;border:1px solid #8e725572;font:500 12px var(--sans)}
 .motion-toggle i{display:block;width:7px;height:9px;border-left:7px solid currentColor;border-block:4px solid transparent}
 .motion-toggle[aria-pressed=true] i{border:solid currentColor;border-width:0 2px}
@@ -118,12 +116,12 @@ body{background:#100f10}
  .hero::after{background:linear-gradient(0deg,#110e0ffc 0%,#100d0ff0 14%,#150d0ed9 35%,#180c0f59 63%,transparent 83%)}
  .hero::before{bottom:6px}
  .hero-inner{justify-content:center}.hero-lockup{width:100%;margin:0;text-align:center;padding:calc(56.25vw + 10px) 0 24px}
- .genre-line,.hero-actions,.release{justify-content:center}
+ .genre-line,.hero-actions{justify-content:center}
  .genre-line{font-size:10px;gap:8px}.metal-diamond{width:6px;height:6px}
  .hero-lockup h1{width:min(94%,375px);max-width:100%;margin:9px auto 6px}
  .game-line{margin-inline:0;font-size:clamp(17px,4.3vw,24px);letter-spacing:-.045em}
  .hero-actions{gap:8px;margin:14px 0 10px}.hero-actions a{min-height:43px;font-size:13px;padding:9px 14px}
- .release{font-size:11px}.motion-toggle{top:12px;bottom:auto;right:12px;font-size:10px;padding:4px 8px;min-height:34px}
+ .motion-toggle{top:12px;bottom:auto;right:12px;font-size:10px;padding:4px 8px;min-height:34px}
  .gate-row{width:100%}.gate-row a{flex-direction:column;justify-content:center;min-height:71px;gap:3px;text-align:center;padding:6px 2px}.gate-row img{width:28px;height:28px}.gate-row span{font-size:clamp(12px,3.15vw,17px)}
  .story-art{aspect-ratio:2.1}.story-art img{object-position:center 17%}.story-inner{flex-direction:column-reverse}
  .story-copy h2{font-size:36px;margin:7px 0 12px}.story-next{margin-top:7px}
@@ -139,8 +137,7 @@ body{background:#100f10}
 .departure{object-fit:cover;object-position:center 72%;z-index:-2}
 .steam-finale::after{content:"";z-index:-1;background:linear-gradient(90deg,#100e10e8 8%,#160d108f 30%,transparent 52%,#160d1077 71%,#110b0ce0 94%)}
 .finale-content{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:clamp(38px,5.3vw,85px);min-height:200px}
-.finale-id>img{width:clamp(150px,22vw,330px);height:auto}
-.finale-id .release{margin-top:6px;justify-content:flex-start}
+.finale-logo{width:clamp(150px,22vw,330px);height:auto}
 .steam-finale .primary-cta{display:inline-flex;align-items:center;gap:16px;min-height:45px;padding:10px 18px;text-decoration:none;color:#fff6e8;font:650 14px var(--sans)}
 @media(max-width:700px){
  .finale-content{flex-direction:column;align-items:flex-start;gap:14px;min-height:0;padding-block:28px}

@@ -27,10 +27,10 @@
 .growth-compare:hover{border-color:#bd8d55}
 .growth-compare:hover strong{text-decoration:underline;text-underline-offset:.2em}
 .growth-compare strong{font:600 clamp(13px,1.05vw,17px)/1.5 var(--sans)}
-.growth-last{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+.growth-last{grid-template-columns:minmax(0,.58fr) minmax(0,1.42fr);gap:clamp(20px,3vw,45px)}
 .growth-last>div{max-width:34em}
 .growth-brand-screen{margin:0}
-.growth-brand-screen img{display:block;width:100%;height:auto;border:1px solid #76644d77}
+.growth-brand-screen img{display:block;width:100%;height:auto;object-fit:contain;outline:1px solid #76644d77;outline-offset:-1px}
 .growth-brand-screen figcaption{margin-top:9px;color:#c4b9aa;font:400 clamp(13px,1vw,15px)/1.65 var(--sans)}
 @media(max-width:730px){
  .growth-head{grid-template-columns:1fr;gap:12px}

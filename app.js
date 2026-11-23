@@ -18,7 +18,7 @@
     en:{
       ...window.GAME_BODY?.en, ...window.DEPTH_COPY?.en, ...window.BUILD_COPY?.en,
       skip:"Skip to content", home:"Lemegeton home", nav:"Main navigation", navStory:"Story", navCombat:"Combat", navMedia:"Black Realm", navNews:"News", language:"Display language", menu:"Menu",
-      heroTitle:"Lemegeton", heroLine:"Logan carved a demon’s name into his flesh.", wish:"Wishlist on Steam", watch:"Watch with sound", soon:"Coming soon",
+      heroTitle:"Lemegeton", heroLine:"Logan carved a demon’s name into his flesh.", wish:"Wishlist on Steam", watch:"Watch with sound",
       storyTitle:"The Black Baptism", storyOne:"The Black Baptism turned people into demons. Only the walls of Novar held them back.",
       storyTwo:"A human blade could not touch a demon. Logan carved a demon’s name into his flesh and walked beyond the walls alone.",
       storyAlt:"A silver-haired figure stands beside a burning gate.", trailerTitle:"Lemegeton — Official teaser", close:"Close", openVideo:"Open video file",
@@ -42,7 +42,7 @@
     zh:{
       ...window.GAME_BODY?.zh, ...window.DEPTH_COPY?.zh, ...window.BUILD_COPY?.zh,
       skip:"跳到正文", home:"Lemegeton 主页", nav:"主导航", navStory:"世界观", navCombat:"战斗", navMedia:"探索黑域", navNews:"动态", language:"显示语言", menu:"菜单",
-      heroTitle:"Lemegeton", heroLine:"洛根将恶魔的名字刻进了身体。", wish:"加入 Steam 愿望单", watch:"开启声音观看", soon:"即将推出",
+      heroTitle:"Lemegeton", heroLine:"洛根将恶魔的名字刻进了身体。", wish:"加入 Steam 愿望单", watch:"开启声音观看",
       storyTitle:"黑色洗礼", storyOne:"黑色洗礼降临，人们化作恶魔。只有诺瓦尔的城墙挡住了它们。",
       storyTwo:"人类的刀刃伤不到恶魔。洛根将恶魔的名字刻进身体，提剑独自走出了城墙。", storyAlt:"燃烧的大门旁站着一个银发身影。",
       trailerTitle:"Lemegeton 官方预告片", close:"关闭", openVideo:"打开视频文件", title:"Lemegeton | 官方网站", description:"以人类剑术与恶魔之力战斗的动作肉鸽游戏。观看官方预告片、实机战斗与黑域截图。",

@@ -20,11 +20,11 @@ window.BUILD_COPY = {
     growthSkillsExample: "The first path shown here raises attack power for three seconds after a successful parry.",
     growthSkillScreen: "Demon path choices",
     growthBrand: "What survives a run",
-    growthBrandCount: "120+ permanent nodes",
-    growthBrandText: "When Logan falls in the Black Realm, he has to find his way through it again. Every Brand node he has unlocked stays with him.",
-    growthBrandEffect: "Some nodes raise his stats. Others strengthen a skill or unlock a new effect. Those upgrades carry over to his next run.",
-    growthBrandAlt: "Red lines connect a group of Brand nodes. The health recovery node is active.",
-    growthBrandExample: "In the combat demo, this node restores 1% of Logan’s maximum health each time he defeats an enemy."
+    growthBrandCount: "120+ nodes in the full tree",
+    growthBrandText: "If Logan falls in the Black Realm, he starts his next run with the stats and skills he’s already strengthened through the Brand.",
+    growthBrandEffect: "In the combat demo, unlocking Health Recovery lets Logan regain 1% of his maximum health whenever he defeats an enemy.",
+    growthBrandAlt: "Several paths of Brand nodes branch out from a red sigil in the lower left.",
+    growthBrandExample: "One section of the Brand tree in the combat demo. Red lines connect the nodes Logan has unlocked."
   },
   zh: {
     growthHeading: "卡牌与烙印",
@@ -41,10 +41,10 @@ window.BUILD_COPY = {
     growthSkillsExample: "图中第一条道路会在成功招架后的三秒内提高攻击力。",
     growthSkillScreen: "恶魔道路选择画面",
     growthBrand: "死亡也抹不去的烙印",
-    growthBrandCount: "120 多个永久节点",
-    growthBrandText: "一旦倒在黑域，洛根就得从头探索。已经解锁的烙印节点会一直留在他身上。",
-    growthBrandEffect: "有的节点提升属性，有的能强化技能或解锁新的效果。下一次踏入黑域，这些力量仍会伴随洛根。",
-    growthBrandAlt: "烙印节点由红线相连，其中的生命恢复节点已激活。",
-    growthBrandExample: "在战斗试玩版中，解锁「生命恢复」节点后，每击败一个敌人，就能回复最大生命值的 1%。"
+    growthBrandCount: "整棵烙印树共 120 多个节点",
+    growthBrandText: "洛根倒在黑域后，下一次探索得从头开始。通过烙印提升的属性和强化过的技能都会保留。",
+    growthBrandEffect: "在战斗试玩版中，解锁「生命恢复」节点后，每击败一个敌人，洛根就能回复最大生命值的 1%。",
+    growthBrandAlt: "从左下方的红色印记出发，烙印节点沿数条路线向外延伸。",
+    growthBrandExample: "战斗试玩版中的一段烙印树。红线连接着洛根已解锁的节点。"
   }
 };

@@ -19,15 +19,15 @@
 <link rel="icon" href="assets/folio/seal.webp">
 <link rel="preload" as="image" href="assets/descent/cover.webp" media="(min-width: 701px)">
 <link rel="preload" as="image" href="assets/descent/cover-mobile.webp" media="(max-width: 700px)">
-<link rel="stylesheet" href="style.css?v=descent4">
+<link rel="stylesheet" href="style.css?v=breaks8">
 <link rel="stylesheet" href="body.css?v=share6">
 <link rel="stylesheet" href="depth.css?v=share6">
-<link rel="stylesheet" href="build.css?v=share6">
-<link rel="stylesheet" href="descent.css?v=copy7">
+<link rel="stylesheet" href="build.css?v=breaks8">
+<link rel="stylesheet" href="descent.css?v=breaks8">
 <script src="depth.js?v=copy7" defer></script>
-<script src="build.js?v=copy7" defer></script>
-<script src="body.js?v=copy7" defer></script>
-<script src="app.js?v=copy7" defer></script>
+<script src="build.js?v=breaks8" defer></script>
+<script src="body.js?v=breaks8" defer></script>
+<script src="app.js?v=breaks8" defer></script>
 </head>
 <body>
 <a href="#main" class="skip" data-t="skip">본문 바로가기</a>
@@ -55,7 +55,6 @@
      <a class="primary-cta" href="https://store.steampowered.com/app/3728770/Lemegeton/?l=koreana" target="_blank" rel="noopener"><span data-t="wish">Steam에서 찜하기</span><span aria-hidden="true">↗</span></a>
      <a class="trailer-cta" href="assets/teaser.mp4" data-trailer><i aria-hidden="true"></i><span data-t="watch">소리 켜고 보기</span></a>
     </div>
-    <p class="release"><span lang="en">Windows PC</span><i aria-hidden="true"></i><span data-t="soon">출시 예정</span></p>
    </div>
   </div>
   <button class="motion-toggle" id="motion-toggle" type="button" aria-controls="hero-teaser" aria-pressed="false" hidden><i aria-hidden="true"></i><span data-t="motionStart">티저 재생</span></button>
@@ -91,7 +90,8 @@
           <button type="button" data-form="human" aria-controls="combat-player combat-summary" aria-pressed="true"><span data-t="combatHuman">인간의 검술</span></button>
           <button type="button" data-form="demon" aria-controls="combat-player combat-summary" aria-pressed="false"><span data-t="combatDemon">악마의 힘</span></button>
         </div>
-        <p id="combat-summary" aria-live="polite">적의 공격이 닿는 순간 검으로 받아치세요. 적이 휘청이면 파고들어 마무리 공격을 넣을 수 있습니다.</p>
+        <p class="sentence-lines" id="combat-summary" aria-live="polite">적의 공격이 닿는 순간 검으로 받아치세요.
+적이 휘청이면 파고들어 마무리 공격을 넣을 수 있습니다.</p>
       </div>
       <figure class="combat-media">
         <video id="combat-player" width="1120" height="630" controls playsinline muted preload="none" poster="assets/human.webp" aria-label="로건이 검을 들어 적의 공격을 받아치는 장면"><source src="assets/human.mp4" type="video/mp4"></video>
@@ -105,7 +105,8 @@
   <div class="container">
     <div class="encounter-intro">
       <h2 id="encounters-title" data-t="depthEnemyTitle">악마와 보스</h2>
-      <p data-t="depthEnemyLead">흑역에는 30종이 넘는 악마가 있고, 보스만 여섯입니다. 처음 보는 상대라면 공격하기 직전의 움직임부터 눈여겨보세요.</p>
+      <p class="sentence-lines" data-t="depthEnemyLead">흑역에는 30종이 넘는 악마가 있고, 보스만 여섯입니다.
+처음 보는 상대라면 공격하기 직전의 움직임부터 눈여겨보세요.</p>
     </div>
     <div class="encounter-scenes">
       <figure class="encounter-major">
@@ -129,7 +130,8 @@
   <div class="container pact-layout">
     <div class="pact-copy">
       <h2 id="pact-title" data-t="depthPactTitle">악마상인의 계약</h2>
-      <p data-t="depthPactLead">흑역에서 악마상인을 만나면 계약을 맺고 힘을 빌릴 수 있습니다. 그 힘을 쓸수록 로건은 타락하고, 끝내 저주에 걸립니다.</p>
+      <p class="sentence-lines" data-t="depthPactLead">흑역에서 악마상인을 만나면 계약을 맺고 힘을 빌릴 수 있습니다.
+그 힘을 쓸수록 로건은 타락하고, 끝내 저주에 걸립니다.</p>
       <div class="pact-offer">
         <img src="assets/folio/seal.webp" width="153" height="153" loading="lazy" alt="">
         <div><h3 lang="en">Blood Contract</h3><p data-t="depthDeal">이 계약을 맺으면 공격력이 20 오르고 최대 체력은 20 줄어듭니다.</p></div>
@@ -149,7 +151,8 @@
   <div class="container growth-inner">
     <div class="growth-head">
       <h2 id="growth-heading" data-t="growthHeading">카드와 낙인</h2>
-      <p data-t="growthIntro">반격이 손에 익었다면 그 한 방을 강화할 카드를 모아 보세요. 악마를 불러내 대신 싸우게 하는 조합도 있습니다.</p>
+      <p class="sentence-lines" data-t="growthIntro">패링이 손에 익었다면 그다음 공격을 강화하는 카드를 모아 보세요.
+악마를 불러내 대신 싸우게 하는 조합도 있습니다.</p>
     </div>
     <img class="growth-portraits" src="assets/descent/build-portraits.webp" width="1146" height="286" alt="카드에 그려진 일곱 악마" data-alt-t="growthArt" loading="lazy">
     <div class="growth-topics">
@@ -176,15 +179,15 @@
         </div>
       </details>
       <details name="lemegeton-growth">
-        <summary><h3 data-t="growthBrand">죽어도 남는 낙인</h3><span class="growth-count" data-t="growthBrandCount">낙인 노드 120개 이상</span><i aria-hidden="true"></i></summary>
+        <summary><h3 data-t="growthBrand">죽어도 남는 낙인</h3><span class="growth-count" data-t="growthBrandCount">전체 낙인 노드 120개 이상</span><i aria-hidden="true"></i></summary>
         <div class="growth-detail growth-last">
           <div>
-            <p data-t="growthBrandText">흑역에서 쓰러지면 처음부터 다시 시작합니다. 그래도 로건의 몸에 새긴 낙인은 남습니다.</p>
-            <p class="growth-note" data-t="growthBrandEffect">낙인으로 올린 능력치와 강화한 스킬은 다음 판에도 그대로 이어집니다.</p>
+            <p data-t="growthBrandText">흑역에서 쓰러지면 처음부터 다시 시작합니다. 낙인으로 올린 능력치와 강화한 스킬은 다음 탐험에도 그대로 남습니다.</p>
+            <p class="growth-note" data-t="growthBrandEffect">전투 데모에 나오는 ‘체력 회복’ 낙인을 열면 적을 처치할 때마다 최대 체력의 1%를 회복합니다.</p>
           </div>
           <figure class="growth-brand-screen">
-            <img src="assets/descent/brand-recovery.webp" width="1090" height="655" alt="붉은 선으로 이어진 낙인 노드 중 ‘체력 회복’이 활성화된 모습" data-alt-t="growthBrandAlt" loading="lazy">
-            <figcaption data-t="growthBrandExample">전투 데모의 ‘체력 회복’ 낙인. 적을 처치할 때마다 최대 체력의 1%를 회복합니다.</figcaption>
+            <img src="assets/descent/brand-growth.webp" width="2560" height="1440" alt="왼쪽 아래의 붉은 문양에서 여러 갈래로 뻗어 나가는 낙인 노드" data-alt-t="growthBrandAlt" loading="lazy">
+            <figcaption data-t="growthBrandExample">전투 데모에서 본 낙인 트리의 한 구간. 로건이 열어 둔 노드는 붉은 선으로 이어집니다.</figcaption>
           </figure>
         </div>
       </details>
@@ -196,7 +199,8 @@
   <div class="container">
     <div class="realm-heading">
       <h2 id="realm-title" class="game-heading" data-t="realmTitle">흑역 탐험</h2>
-      <p class="section-copy" data-t="realmIntro">흑역은 들어갈 때마다 길이 달라집니다. 길을 가다 회복샘을 만나면 체력을 채우고, 제단을 발견하면 시련에 도전해 보세요.</p>
+      <p class="sentence-lines section-copy" data-t="realmIntro">흑역은 들어갈 때마다 길이 달라집니다.
+길을 가다 회복샘을 만나면 체력을 채우고, 제단을 발견하면 시련에 도전해 보세요.</p>
     </div>
     <div class="realm-gallery">
       <figure class="realm-feature">
@@ -242,7 +246,7 @@
 <aside class="steam-finale" aria-label="Steam">
  <img class="departure" src="assets/descent/threshold.webp" width="1280" height="720" alt="" loading="lazy">
  <div class="container finale-content">
-  <div class="finale-id"><img src="assets/folio/wordmark.webp" width="1280" height="233" alt="Lemegeton" loading="lazy"><p class="release"><span lang="en">Windows PC</span><i aria-hidden="true"></i><span data-t="soon">출시 예정</span></p></div>
+  <img class="finale-logo" src="assets/folio/wordmark.webp" width="1280" height="233" alt="Lemegeton" loading="lazy">
   <a class="primary-cta" href="https://store.steampowered.com/app/3728770/Lemegeton/?l=koreana" target="_blank" rel="noopener"><span data-t="wish">Steam에서 찜하기</span><span aria-hidden="true">↗</span></a>
  </div>
 </aside>
